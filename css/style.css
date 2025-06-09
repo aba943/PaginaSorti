@@ -1,0 +1,575 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "CaustenBold";
+    src: url('../tipografias/Causten\ Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: "TekoBold";
+    src: url('../tipografias/Teko-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: "CaustenRegular";
+    src: url('../tipografias/Causten\ Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: "CaustenSemiBold";
+    src: url('../tipografias/Causten\ Semi\ Bold.ttf') format('truetype');
+}
+body{
+    background-image: url(../imgs/fondo2.png);
+    min-height: 100vh;
+}
+
+
+
+
+.head{
+    
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background: rgba(0, 42, 22, 0.6);
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px);
+}
+.head .caja1{
+    padding-top: 20px;
+    margin-left: 162px;
+    margin-right: 162px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.head .caja1 a{
+    font-family: 'CaustenBold';
+    text-decoration: none;
+    color: #D4FD2B;
+    font-size: 20px;
+}
+.head .caja1 .caja2 .btn1{
+    width: 142px;
+    height: 40px;
+    border: 1px solid #D4FD2B;
+    border-radius: 10px;
+    border-color: #D4FD2B;
+    font-size: 20px;
+    font-family: 'CaustenBold';
+    background-color: transparent;
+    color: #D4FD2B;
+} 
+
+.head .caja1 .caja2 .btn2{
+    width: 142px;
+    height: 40px;
+    background: linear-gradient(130deg, #D4FD2B, #42C148 30%);
+    border-radius: 10px;
+    color: #002D16;
+    font-size: 20px;
+    font-family: 'CaustenBold';
+    border-color: transparent;
+}
+
+
+
+
+.prin{
+    width: 100%;
+    margin-top: 80px;
+    width: 100%;
+}
+.prin .caja1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.prin .caja1 .box1{
+    margin-top: 98px;
+    margin-left: 162px;
+    
+}
+.prin .caja1 .box1 .letra{
+    font-family: 'TekoBold';
+    font-size: 137.08px;
+    line-height: 110px;
+    color: #D4FD2B;
+}
+.prin .caja1 .box1 .btn1{
+    width: 303px;
+    height: 60px;
+    background: linear-gradient(130deg, #D4FD2B, #42C148);
+    border-radius: 20px;
+    color: #002D16;
+    font-size: 32.36px;
+    font-family: 'CaustenBold';
+    border-color: transparent;
+}
+.prin .caja1 .box1 .btn1:hover{
+    width: 303px;
+    height: 60px;
+    background: linear-gradient(45deg, #42C148, #42C148);
+    border-radius: 20px;
+    color: #002D16;
+    font-size: 32.36px;
+    font-family: 'CaustenBold';
+    border-color: transparent;
+    cursor: pointer;
+    color: white;
+}
+
+
+
+
+.bien .caja{
+    width: 100%;
+    height: 360px;
+    display: flex;
+    flex-direction: column;
+    background-image: url(../imgs/bienvenido.png);
+    align-items: center;
+    justify-content: center;
+}
+.bien .caja .box1{
+    padding-bottom: 20px;
+}
+.bien .caja .box2{
+    padding-top: 20px;
+}
+.bien .caja .box1 h1{
+    font-size: 52.36px;
+    font-family: 'CaustenBold';
+    color: #D4FD2B;
+}
+.bien .caja .box2 .btn1{
+    width: 303px;
+    height: 60px;
+    background: linear-gradient(130deg, #D4FD2B, #42C148 30%);
+    border-radius: 10px;
+    color: #002D16;
+    font-size: 32.36px;
+    font-family: 'CaustenBold';
+    border-color: transparent;
+}
+.bien .caja .box2 .btn2{
+    width: 303px;
+    height: 60px;
+    border: 1px solid #D4FD2B;
+    border-radius: 10px;
+    border-color: #D4FD2B;
+    font-size: 32.36px;
+    font-family: 'CaustenBold';
+    background-color: transparent;
+    color: #D4FD2B;
+}
+
+
+.image{
+    padding-top: 22px;
+}
+.image .caja{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+
+.large{
+    padding-top: 20px;
+}
+.large .caja img{
+    width:100%;
+}
+
+
+.peque{
+    padding-top:20px ;
+}
+.peque .caja{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer{
+    background-color: #3F0C2D;
+    height: 750px;
+    margin-top: 40px;
+}
+footer .caja{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 162px;
+    padding-right: 162px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    
+}
+footer .caja .box1 .redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+footer .caja .box1{
+    
+    font-size: 12.36px;
+    font-family: 'CaustenRegular';
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 19px;
+}
+
+footer .caja .box2 h1 {
+    color: #D4FD2B;
+    font-family: 'CaustenSemiBold';
+    font-family: 32.36px;
+}
+footer .caja .box2 p {
+    color: #D4FD2B;
+    font-family: 'CaustenRegular';
+    color: white;
+    font-family: 20px;
+}
+
+footer .cajaColor{
+    background-color: #D4FD2B;
+    height: 4px;
+    margin-right: 162px;
+    margin-left: 162px;
+}
+footer .caja2 p{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-right:324px;
+    margin-left: 324px;
+    color: white;
+    font-family: 'CaustenRegular';
+    font-size: 20px;
+    text-align: center;
+}
+
+footer .caja3 p{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-left: 162px;
+    color: white;
+    font-family: 'CaustenRegular';
+    font-size: 12.36px;
+    text-align: left;
+}
+
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+.whatsapp-float img {
+  width: 40px;
+  height: 40px;
+  margin-top: 10px;
+}
+
+.whatsapp-float:hover {
+  background-color: #128C7E;
+  transform: scale(1.1);
+}
+
+
+
+@media (max-width: 480px) {
+    .head{
+        
+        height: 80px;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        background: rgba(0, 42, 22, 0.6);
+        backdrop-filter: blur(10px); 
+        -webkit-backdrop-filter: blur(10px);
+    }
+    .head .caja1 a{
+        display: none;
+    }
+    .head .caja1{
+        padding-top: 20px;
+        margin-left: 16px;
+        margin-right: 16px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    .head .caja1 a{
+        font-family: 'CaustenBold';
+        text-decoration: none;
+        color: #D4FD2B;
+        font-size: 20px;
+    }
+    .head .caja1 .caja2 .btn1{
+        width: 142px;
+        height: 40px;
+        border: 1px solid #D4FD2B;
+        border-radius: 10px;
+        border-color: #D4FD2B;
+        font-size: 20px;
+        font-family: 'CaustenBold';
+        background-color: transparent;
+        color: #D4FD2B;
+    } 
+    
+    .head .caja1 .caja2 .btn2{
+        width: 142px;
+        height: 40px;
+        background: linear-gradient(130deg, #D4FD2B, #42C148 30%);
+        border-radius: 10px;
+        color: #002D16;
+        font-size: 20px;
+        font-family: 'CaustenBold';
+        border-color: transparent;
+    }
+    
+    
+    body{
+        background-image: url(../imgs/fondoPeque.png);
+        background-size: cover; /* Cubre todo el área sin distorsionar */
+        background-position: center; /* Centra la imagen */
+        background-repeat: no-repeat;
+    }   
+    .prin{
+        width: 100%;
+        margin-top: 40px;
+        width: 100%;
+    }
+    .prin .caja1{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 40px;
+        
+    }
+    .prin .caja1 .box1{
+        margin-left: 0px;
+    }
+    .prin .caja1 .box1 a{
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+    }
+    .prin .caja1 .box1 .letra{
+        font-family: 'TekoBold';
+        font-size:  52.36px;
+        line-height: 50px;
+        color: #D4FD2B;
+        text-align: center;
+    }
+    .prin .caja1 .box1 .btn1{
+        width: 187px;
+        height: 37px;
+        background: linear-gradient(130deg, #D4FD2B, #42C148);
+        border-radius: 12px;
+        color: #002D16;
+        font-size: 20px;
+        font-family: 'CaustenBold';
+        border-color: transparent;
+    }
+    .prin .caja1 .box1 .btn1:hover{
+        width: 187px;
+        height: 37px;
+        background: linear-gradient(45deg, #42C148, #42C148);
+        border-radius: 12px;
+        color: #002D16;
+        font-size: 20px;
+        font-family: 'CaustenBold';
+        border-color: transparent;
+        cursor: pointer;
+        color: white;
+    }
+    .prin .caja1 .box2 img{
+        width: 100%;
+    }
+    
+    
+    
+    
+    .bien .caja{
+        width: 100%;
+        height: 360px;
+        display: flex;
+        flex-direction: column;
+        background-image: url(../imgs/bienvenidoPequeño.png);
+        align-items: center;
+        justify-content: center;
+        background-size: cover;
+        background-position: center; 
+        background-repeat: no-repeat;
+    }
+    .bien .caja .box1{
+        padding-bottom: 20px;
+    }
+    .bien .caja .box2{
+        padding-top: 20px;
+    }
+    .bien .caja .box1 h1{
+        font-size: 32.36px;
+        font-family: 'CaustenBold';
+        color: #D4FD2B;
+        text-align: center;
+    }
+    .bien .caja .box2 .btn1{
+        width: 187px;
+        height: 37px;
+        background: linear-gradient(130deg, #D4FD2B, #42C148 30%);
+        border-radius: 10px;
+        color: #002D16;
+        font-size: 20px;
+        font-family: 'CaustenBold';
+        border-color: transparent;
+    }
+    .bien .caja .box2 .btn2{
+        width: 187px;
+        height: 37px;
+        border: 1px solid #D4FD2B;
+        border-radius: 10px;
+        border-color: #D4FD2B;
+        font-size: 20px;
+        font-family: 'CaustenBold';
+        background-color: transparent;
+        color: #D4FD2B;
+    }
+    
+    .image{
+        padding-top: 22px;
+    }
+    .image .caja{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 20px;
+    }
+    .peque{
+        padding-top:20px ;
+    }
+    .peque .caja{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 20px;
+    }
+    
+    
+    footer{
+        background-color: #3F0C2D;
+        margin-top: 40px;
+        height: 1000px;
+    }
+    footer .caja{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        
+    }
+    footer .caja .box1 .redes{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 20px;
+    }
+    footer .caja .box1{
+        
+        font-size: 12.36px;
+        font-family: 'CaustenRegular';
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 19px;
+    }
+    footer .caja .box1 .logo{
+        width:200px ;
+    }
+    
+    footer .caja .box2 h1 {
+        color: #D4FD2B;
+        font-family: 'CaustenSemiBold';
+        font-family: 32.36px;
+    }
+    footer .caja .box2 p {
+        color: #D4FD2B;
+        font-family: 'CaustenRegular';
+        color: white;
+        font-family: 20px;
+    }
+    
+    footer .cajaColor{
+        background-color: #D4FD2B;
+        height: 4px;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    footer .caja2 p{
+        padding-top: 40px;
+        padding-bottom: 40px;
+        margin-right:16px;
+        margin-left: 16px;
+        color: white;
+        font-family: 'CaustenRegular';
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    footer .caja3 p{
+        padding-top: 40px;
+        padding-bottom: 40px;
+        margin-left: 16px;
+        color: white;
+        font-family: 'CaustenRegular';
+        font-size: 12.36px;
+        text-align: left;
+    }
+    
+    .whatsapp-float {
+    width: 50px;
+    height: 50px;
+    bottom: 15px;
+    right: 15px;
+  }
+  
+  .whatsapp-float img {
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+  }
+    
+    
+}
+
+
+
