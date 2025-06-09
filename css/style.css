@@ -399,7 +399,8 @@ footer .caja3 p{
     }   
     .prin{
         margin-left: 0px;
-        margin-top: 40px;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
     .prin .caja1{
         display: flex;
@@ -482,9 +483,10 @@ footer .caja3 p{
         flex-direction: row;
         width: 100%;
         justify-content: center;
+        gap: 20px;
     }
     .bien .caja .box2 .btn1{
-        width: 187px;
+        width: 167px;
         height: 37px;
         background: linear-gradient(130deg, #D4FD2B, #42C148 30%);
         border-radius: 10px;
@@ -494,7 +496,7 @@ footer .caja3 p{
         border-color: transparent;
     }
     .bien .caja .box2 .btn2{
-        width: 187px;
+        width: 167px;
         height: 37px;
         border: 1px solid #D4FD2B;
         border-radius: 10px;
