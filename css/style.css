@@ -22,6 +22,11 @@
 body{
     background-image: url(../imgs/fondo2.png);
     min-height: 100vh;
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
 }
 
 
@@ -89,17 +94,26 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: 100%;
 }
 .prin .caja1 .box1{
     margin-top: 98px;
     margin-left: 162px;
     
 }
+
 .prin .caja1 .box1 .letra{
     font-family: 'TekoBold';
-    font-size: 137.08px;
+    font-size: calc(2rem + 5vw);
     line-height: 110px;
     color: #D4FD2B;
+}
+.prin .caja1 .box1{
+    width: 50%;
+}
+.prin .caja1 .box2 img{
+    width: 100%;
+    
 }
 .prin .caja1 .box1 .btn1{
     width: 303px;
@@ -135,6 +149,9 @@ body{
     background-image: url(../imgs/bienvenido.png);
     align-items: center;
     justify-content: center;
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
 }
 .bien .caja .box1{
     padding-bottom: 20px;
@@ -172,13 +189,24 @@ body{
 
 .image{
     padding-top: 22px;
+    
 }
 .image .caja{
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap; 
+    gap: 15px; 
 }
+.image .caja img{
+    max-width: 100%; 
+    height: auto; 
+    object-fit: contain; 
+    flex: 1 1 calc(25% - 15px);
+    min-width: 150px;
+}
+
 
 
 
@@ -196,6 +224,17 @@ body{
 .peque .caja{
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+    gap: 15px;
+}
+.peque .caja img{
+    max-width: 100%; 
+    height: auto; 
+    object-fit: contain; 
+    flex: 1 1 calc(25% - 15px);
+    min-width: 150px;
 }
 
 footer{
@@ -269,30 +308,30 @@ footer .caja3 p{
 }
 
 .whatsapp-float {
-  position: fixed;
-  width: 60px;
-  height: 60px;
-  bottom: 20px;
-  right: 20px;
-  background-color: #25d366;
-  color: #FFF;
-  border-radius: 50px;
-  text-align: center;
-  font-size: 30px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  z-index: 1000;
-  transition: all 0.3s ease;
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transition: all 0.3s ease;
 }
 
 .whatsapp-float img {
-  width: 40px;
-  height: 40px;
-  margin-top: 10px;
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
 }
 
 .whatsapp-float:hover {
-  background-color: #128C7E;
-  transform: scale(1.1);
+    background-color: #128C7E;
+    transform: scale(1.1);
 }
 
 
@@ -354,24 +393,24 @@ footer .caja3 p{
     
     body{
         background-image: url(../imgs/fondoPeque.png);
-        background-size: cover; /* Cubre todo el área sin distorsionar */
-        background-position: center; /* Centra la imagen */
+        background-size: cover; 
+        background-position: center;
         background-repeat: no-repeat;
     }   
     .prin{
-        width: 100%;
+        margin-left: 0px;
         margin-top: 40px;
-        width: 100%;
     }
     .prin .caja1{
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         gap: 40px;
-        
+        align-items: center;
     }
     .prin .caja1 .box1{
         margin-left: 0px;
+        width: 100%;
     }
     .prin .caja1 .box1 a{
         display: flex;
@@ -437,6 +476,12 @@ footer .caja3 p{
         font-family: 'CaustenBold';
         color: #D4FD2B;
         text-align: center;
+    }
+    .bien .caja .box2{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
     }
     .bien .caja .box2 .btn1{
         width: 187px;
@@ -556,19 +601,74 @@ footer .caja3 p{
     }
     
     .whatsapp-float {
-    width: 50px;
-    height: 50px;
-    bottom: 15px;
-    right: 15px;
-  }
+        width: 50px;
+        height: 50px;
+        bottom: 15px;
+        right: 15px;
+    }
+    
+    .whatsapp-float img {
+        width: 30px;
+        height: 30px;
+        margin-top: 10px;
+    }
+    
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+    
+    
+    .head .caja1 {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    
+    
+    .prin .caja1 {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .prin .caja1 .box1 {
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+        margin-top: 40px;
+    }
+    
+    .prin .caja1 .box1 .letra {
+        font-size: 5vw;
+        line-height: 1.2;
+        white-space: normal;
+    }
+    
+   
+    .image .caja, 
+    .peque .caja {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .image .caja img,
+    .peque .caja img {
+        flex: 1 1 calc(50% - 15px);
+        max-width: calc(50% - 15px);
+    }
+    
   
-  .whatsapp-float img {
-    width: 30px;
-    height: 30px;
-    margin-top: 10px;
-  }
+    footer .caja {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
     
+    footer .caja .box1 {
+        flex: 1 1 100%;
+        margin-bottom: 30px;
+    }
     
+    footer .caja .box2 {
+        flex: 1 1 calc(50% - 20px);
+    }
 }
 
 
