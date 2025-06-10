@@ -59,18 +59,9 @@ body{
     color: #D4FD2B;
     font-size: 20px;
 }
-.head .caja1 .caja2 .btn1{
-    width: 142px;
-    height: 40px;
-    border: 1px solid #D4FD2B;
-    border-radius: 10px;
-    border-color: #D4FD2B;
-    font-size: 20px;
-    font-family: 'CaustenBold';
-    background-color: transparent;
-    color: #D4FD2B;
-} 
-
+.head .caja1 img{
+    width: 161px;
+}
 .head .caja1 .caja2 .btn2{
     width: 142px;
     height: 40px;
@@ -81,6 +72,18 @@ body{
     font-family: 'CaustenBold';
     border-color: transparent;
 }
+.head .caja1 .caja2 .btn2:hover{
+    cursor: pointer;
+    width: 142px;
+    height: 40px;
+    background:#42C148;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    font-family: 'CaustenBold';
+    border-color: transparent;
+}
+
 
 
 
@@ -88,7 +91,6 @@ body{
 .prin{
     width: 100%;
     margin-top: 80px;
-    width: 100%;
 }
 .prin .caja1{
     display: flex;
@@ -97,15 +99,15 @@ body{
     width: 100%;
 }
 .prin .caja1 .box1{
-    margin-top: 98px;
+    margin-top: 60px;
     margin-left: 162px;
     
 }
 
 .prin .caja1 .box1 .letra{
     font-family: 'TekoBold';
-    font-size: calc(2rem + 5vw);
-    line-height: 110px;
+    font-size: calc(1rem + 5vw);
+    line-height: calc(1rem + 5vw);
     color: #D4FD2B;
 }
 .prin .caja1 .box1{
@@ -174,6 +176,18 @@ body{
     font-family: 'CaustenBold';
     border-color: transparent;
 }
+.bien .caja .box2 .btn1:hover{
+    cursor: pointer;
+    width: 303px;
+    height: 60px;
+    background: #42C148;
+    border-radius: 10px;
+    color: white;
+    font-size: 32.36px;
+    font-family: 'CaustenBold';
+    border-color: transparent;
+}
+
 .bien .caja .box2 .btn2{
     width: 303px;
     height: 60px;
@@ -184,6 +198,18 @@ body{
     font-family: 'CaustenBold';
     background-color: transparent;
     color: #D4FD2B;
+}
+.bien .caja .box2 .btn2:hover{
+    cursor: pointer;
+    width: 303px;
+    height: 60px;
+    border: 1px solid #D4FD2B;
+    border-radius: 10px;
+    border-color: #D4FD2B;
+    font-size: 32.36px;
+    font-family: 'CaustenBold';
+    background-color: #D4FD2B;
+    color: #002D16;
 }
 
 
