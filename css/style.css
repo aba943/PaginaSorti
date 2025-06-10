@@ -225,12 +225,18 @@ body{
     flex-wrap: wrap; 
     gap: 15px; 
 }
-.image .caja img{
+.image .caja a{
     max-width: 100%; 
     height: auto; 
     object-fit: contain; 
     flex: 1 1 calc(25% - 15px);
     min-width: 150px;
+}
+.image .caja a img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
 }
 
 
@@ -546,6 +552,7 @@ footer .caja3 p{
         justify-content: space-between;
         gap: 20px;
     }
+    
     .peque{
         padding-top:20px ;
     }
